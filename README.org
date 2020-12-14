@@ -5,35 +5,20 @@
 npm init create-app プロジェクト名
 #+end_src
 
+- npm や react-scripts のバージョンを更新する
 
 - GitHub pages に公開する仕方
   - npm run build
   - npm install gh-pages --save-dev
   - package.json に以下を追加
     #+begin_src -n
-    {
-      "name": "computational_game",
-      "version": "0.1.0",
-      "private": true,
-      "dependencies": {
-        "react": "^17.0.1",
-	"react-dom": "^17.0.1",
-        "react-scripts": "0.9.5"
-       },
-       "devDependencies": {
-         "gh-pages": "^3.1.0"
-       },
-       "scripts": {
-         "start": "react-scripts start",
-	 "build": "react-scripts build",
-	 "rm": "rm -rf docs",
-	 "mv": "mv build docs",
-	 "git": "git add . && git commit -m 'add' && git push origin master",
-	 "deploy": "npm run rm && npm run build && npm run mv && npm run git",
-	 "test": "react-scripts test --env=jsdom",
-	 "eject": "react-scripts eject"
-       },
-       "homepage": "https://taiseiyo.github.io/リポジトリの名前/index.html"
+    "scripts": {
+    "rm": "rm -rf docs",
+    "mv": "mv build docs",
+    "git": "git add . && git commit -m 'add' && git push origin master",
+    "deploy": "npm run rm && npm run build && npm run mv && npm run git",
+    },
+    "homepage": "https://taiseiyo.github.io/リポジトリの名前/index.html"
     }
     #+end_src
   - npm run deploy
