@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/computational_game/static/css/main.83ba86c6.chunk.css",
-    "main.js": "/computational_game/static/js/main.971d19eb.chunk.js",
-    "main.js.map": "/computational_game/static/js/main.971d19eb.chunk.js.map",
+    "main.js": "/computational_game/static/js/main.3e080a0a.chunk.js",
+    "main.js.map": "/computational_game/static/js/main.3e080a0a.chunk.js.map",
     "runtime-main.js": "/computational_game/static/js/runtime-main.7c6d29b8.js",
     "runtime-main.js.map": "/computational_game/static/js/runtime-main.7c6d29b8.js.map",
     "static/js/2.5bb5c574.chunk.js": "/computational_game/static/js/2.5bb5c574.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.7c6d29b8.js",
     "static/js/2.5bb5c574.chunk.js",
     "static/css/main.83ba86c6.chunk.css",
-    "static/js/main.971d19eb.chunk.js"
+    "static/js/main.3e080a0a.chunk.js"
   ]
 }

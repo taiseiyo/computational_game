@@ -15,8 +15,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build master -d build",
+    "rm": "rm -rf docs",
+    "mv": "mv build docs",
+    "git": "git add . && git commit -m 'add' && git push origin master",
+    "deploy": "npm run rm && npm run build && npm run mv && npm run git",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

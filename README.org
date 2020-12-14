@@ -53,5 +53,4 @@ npm init create-app プロジェクト名
 
   
 * 質問
-更新したら落ちる
 GitHub pages について
