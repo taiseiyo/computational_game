@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Game URL is https://taiseiyo.github.io/computational_game/
+
 ## Available Scripts
 
 In the project directory, you can run:
