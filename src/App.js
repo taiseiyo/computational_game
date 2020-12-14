@@ -83,8 +83,6 @@ class App extends Component {
           data: snapshot.val(),
         });
       });
-
-    console.log(this.state.data[0]);
     return this.state.data[0];
   }
 
