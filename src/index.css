@@ -8,6 +8,7 @@ body{
   background-size: 20px 20px;
   border-radius: 5px;
   background-color: #f9ffff;
+  box-sizing:border-box;
   background-image: linear-gradient(45deg,rgba(255,186,238,.1) 25%,transparent 25%,transparent 50%,rgba(255,186,238,.1) 50%,rgba(255,186,238,.1) 75%,transparent 75%,transparent),linear-gradient(-45deg,rgba(255,186,238,.1) 25%,transparent 25%,transparent 50%,rgba(255,186,238,.1) 50%,rgba(255,186,238,.1) 75%,transparent 75%,transparent);
   box-sizing: border-box;
   border: solid 2px #f48fb1;
