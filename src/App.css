@@ -1,0 +1,82 @@
+.First {
+    position: absolute;
+    width: -moz-available;
+    font-size:100px;
+    text-align: center;
+    padding:0px;
+    margin:0px;
+    height:100%;
+}
+
+.App-header{
+    bottom:0px;
+    padding:0px;
+    width:100%;
+    margin:0px auto;
+}
+
+p{
+    color:red;
+}
+.Speed_Button{
+    position:relative;
+    text-align: center;
+    bottom:25px;
+    color: #fff;
+    padding: 20px;
+    color:blue;
+    font-size: 22px;
+    background: #FEA993;
+    border: 2px dashed #F7F9CC;
+    border-radius: 10px;
+    box-shadow: 0 0 0 7px #FEA993;
+}
+
+.Click_Box{
+    position:relative;
+    bottom:25px;
+    color: green;
+    padding: 20px;
+    font-size: 22px;
+    background: #FEA993;
+    border: 2px dashed #F7F9CC;
+    border-radius: 10px;
+    box-shadow: 0 0 0 7px #FEA993;
+}
+
+.Num_Display{
+    margin:0px auto;
+}
+
+.Fourth{
+    font-size:40px;
+    color:blue;
+}
+
+.ans_button{
+    position:relative;
+    top:-10px;
+    font-size: 18px;
+    display: inline-block;
+    padding: 0.5em 1em 0.3em;
+    color: #ffffff;
+    border-radius: 25px;
+    background-color: #0099ff;
+    border: none;
+    cursor: pointer;
+}
+
+.Fifth{
+    margin: 0 auto;
+    width: -moz-fit-content;
+    height:200px;
+}
+.res{
+    margin:10px;
+    width:300px;
+    height:200px;
+    color:blue;
+    box-shadow: 0 0 3px 3px #b2ff59, 0 0 3px 2px #b2ff59 inset;
+    border-radius: 10px;
+    background: #f9fbe7;
+}
