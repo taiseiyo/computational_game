@@ -61,10 +61,14 @@ class App extends Component {
   }
 
   showAns(e) {
-    this.setState((state) => ({
-      ans: this.Cal_ans_num(),
-      num: 0,
-    }));
+    if (this.state.all.length > 0) {
+      this.setState((state) => ({
+        ans: this.Cal_ans_num(),
+        num: 0,
+      }));
+    } else {
+      this.setState((state) => ({ans: 0}));
+    }
   }
 
   getFireData() {
