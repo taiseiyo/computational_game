@@ -33,6 +33,8 @@ class App extends Component {
   doAction(e) {
     this.state.all.splice(0, this.state.all.length);
     document.getElementById("on_off").disabled = "true";
+    document.getElementById("on_off2").disabled = "true";
+
     this.intervalid = setInterval(() => {
       this.setState((state) => ({
         num: Math.floor(Math.random() * 90) + 10,
@@ -43,6 +45,7 @@ class App extends Component {
       if (this.state.all.length === 10) {
         clearInterval(this.intervalid);
         document.getElementById("on_off").disabled = "";
+        document.getElementById("on_off2").disabled = "";
       }
     }, 700);
   }
@@ -104,7 +107,7 @@ class App extends Component {
           </div>
 
           <div className="Fourth">
-            <button className="ans_button" onClick={this.showAns}>
+            <button className="ans_button" onClick={this.showAns} id="on_off2">
               SHOW ANSWER
             </button>
             <br />
