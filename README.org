@@ -6,7 +6,6 @@ npm init create-app プロジェクト名
 #+end_src
 
 - npm や react-scripts のバージョンを更新する
-
 - GitHub pages に公開する仕方
   - npm run build
   - npm install gh-pages --save-dev
