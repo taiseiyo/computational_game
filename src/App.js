@@ -2,10 +2,10 @@ import React, {Component} from "react";
 import firebase from "firebase";
 import "./App.css";
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyBjonRNEb0SYCueDyQzRZ0JoInBz6AmXII",
   authDomain: "computational-game.firebaseapp.com",
-  databaseURL: "https:computational-game-default-rtdb.firebaseio.com",
+  databaseURL: "https://computational-game-default-rtdb.firebaseio.com",
   projectId: "computational-game",
   storageBucket: "computational-game.appspot.com",
   messagingSenderId: "877910975145",
@@ -22,34 +22,33 @@ class App extends Component {
     this.state = {
       num: 0,
       msg: "count start",
-      count: 0,
       all: [],
       ans: 0,
+      data: 4,
     };
     this.doAction = this.doAction.bind(this);
     this.showAns = this.showAns.bind(this);
   }
 
   doAction(e) {
-    this.state.count = 0;
     this.state.all.splice(0, this.state.all.length);
     document.getElementById("on_off").disabled = "true";
     this.intervalid = setInterval(() => {
       this.setState((state) => ({
         num: Math.floor(Math.random() * 90) + 10,
         msg: this.state.counter,
-        count: this.state.count + 1,
         all: this.state.all.concat(this.state.num),
         ans: 0,
       }));
-      if (this.state.count === 10) {
+      if (this.state.all.length === 10) {
         clearInterval(this.intervalid);
         document.getElementById("on_off").disabled = "";
       }
-    }, 500);
+    }, 700);
   }
 
   Cal_ans_num() {
+    this.state.all.push(this.state.num);
     let arr = this.state.all;
     let sum = function (arr) {
       return arr.reduce(function (prev, current, i, arr) {
@@ -72,17 +71,12 @@ class App extends Component {
 
   getFireData() {
     let db = firebase.database();
-    let ref = db.ref("sample/");
-    let self = this;
-    ref
-      .orderByKey()
-      .limitToFirst(1)
-      .on("value", (snapshot) => {
-        self.setState({
-          data: snapshot.val(),
-        });
+    let ref = db.ref("sample");
+    ref.on("value", (snapshot) => {
+      this.setState({
+        data: snapshot.child("1").child("ans").val(),
       });
-    return this.state.data[0];
+    });
   }
 
   render() {
