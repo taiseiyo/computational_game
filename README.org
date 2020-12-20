@@ -35,7 +35,4 @@ npm init create-app プロジェクト名
   - プロジェクトの概要から 1 個のアプリを
     選択して、設定から Firebase SDK snippet の CDN を選択して
     App.js に貼る
-
   
-* 質問
-GitHub pages について
