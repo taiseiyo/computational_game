@@ -23,7 +23,6 @@ npm init create-app プロジェクト名
     #+end_src
   - npm run deploy
 * firebase(realtime data)
-
 - 使いかた
   - module のインストール
     #+begin_src bash
