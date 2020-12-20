@@ -1,11 +1,6 @@
 .First {
-    position: absolute;
-    width: -moz-available;
     font-size:100px;
     text-align: center;
-    padding:0px;
-    margin:0px;
-    height:100%;
 }
 
 .App-header{
@@ -70,6 +65,9 @@ p{
     margin: 0 auto;
     width: -moz-fit-content;
     height:200px;
+    /* 真ん中に寄せたい時や物が二つある時に均等に分ける時に便利 */
+    display:flex;
+    justify-content:center;
 }
 .res{
     margin:10px;
