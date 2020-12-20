@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import firebase from "firebase";
+import firebase from "firebase/app";
 import "./App.css";
 
 const firebaseConfig = {
@@ -47,7 +47,7 @@ class App extends Component {
         document.getElementById("on_off").disabled = "";
         document.getElementById("on_off2").disabled = "";
       }
-    }, 700);
+    }, Math.ceil(1600 / document.getElementById("target").value));
   }
 
   Cal_ans_num() {
@@ -89,13 +89,13 @@ class App extends Component {
           <p className="Num_Display">{this.state.num}</p>
           <div className="Second">
             <div>
-              <select className="Speed_Button" defaultValue={"DEFAULT"}>
-                <option value="DEFAULT" disabled>
-                  Choose game level
+              <select className="Speed_Button" defaultValue={"1"} id="target">
+                <option value="1" disabled>
+                  Choose Game Level
                 </option>
-                <option value="1">Lv.1</option>
-                <option value="2">Lv.2</option>
-                <option value="3">Lv.3</option>
+                <option value="2">Speed Lv.1</option>
+                <option value="3">Speed Lv.2</option>
+                <option value="4">Speed Lv.3</option>
               </select>
             </div>
           </div>
