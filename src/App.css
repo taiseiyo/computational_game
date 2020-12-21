@@ -39,6 +39,10 @@ p{
     box-shadow: 0 0 0 7px #FEA993;
 }
 
+.Click_Box:disabled{
+    background-color: darkgray;
+}
+
 .Num_Display{
     margin:0px auto;
 }
@@ -59,6 +63,11 @@ p{
     background-color: #0099ff;
     border: none;
     cursor: pointer;
+}
+
+.ans_button:disabled{
+  background-color: darkgray;
+  border-color: darkgray;
 }
 
 .Fifth{
