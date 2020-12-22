@@ -76,6 +76,7 @@ class App extends Component {
   }
 
   getFireData() {
+    // not use
     let db = firebase.database();
     let ref = db.ref("sample");
     ref.on("value", (snapshot) => {
@@ -84,24 +85,32 @@ class App extends Component {
       });
     });
   }
-  
-  handleLevelChange(e){
-    console.log(`LEVEL${e.target.value} が選択されました`)
+
+  handleLevelChange(e) {
+    console.log(`LEVEL${e.target.value} が選択されました`);
     this.setState((state) => ({
       ...state,
-      lev: parseInt(e.target.value)
-    }))
+      lev: parseInt(e.target.value),
+    }));
   }
 
   render() {
-    const unableToStart = this.state.lev === 1 || (1 <= this.state.all.length && this.state.all.length < 10)
+    const unableToStart =
+      this.state.lev === 1 ||
+      (1 <= this.state.all.length && this.state.all.length < 10);
+    console.log(unableToStart);
     return (
       <div className="First">
         <div className="App-header">
           <p className="Num_Display">{this.state.num}</p>
           <div className="Second">
             <div>
-              <select className="Speed_Button" id="target" value={this.state.lev} onChange={this.handleLevelChange}>
+              <select
+                className="Speed_Button"
+                id="target"
+                value={this.state.lev}
+                onChange={this.handleLevelChange}
+              >
                 <option value={1} disabled>
                   Choose Game Level
                 </option>
@@ -113,13 +122,23 @@ class App extends Component {
           </div>
 
           <div className="Third">
-            <button className="Click_Box" onClick={this.doAction} id="on_off" disabled={unableToStart}>
+            <button
+              className="Click_Box"
+              onClick={this.doAction}
+              id="on_off"
+              disabled={unableToStart}
+            >
               Game Start!!
             </button>
           </div>
 
           <div className="Fourth">
-            <button className="ans_button" onClick={this.showAns} id="on_off2" disabled={this.state.all.length !== 10}>
+            <button
+              className="ans_button"
+              onClick={this.showAns}
+              id="on_off2"
+              disabled={this.state.all.length !== 10}
+            >
               SHOW ANSWER
             </button>
             <br />
