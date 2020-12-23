@@ -1,0 +1,2 @@
+# package-lock.json がディレクトリにあるので node_modules を消す
+node_modules/
