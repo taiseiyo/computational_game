@@ -2,8 +2,9 @@
 - 次のコマンドを使用
 
 #+begin_src bash
-npm init create-app プロジェクト名
+npx create-react-appプロジェクト名
 #+end_src
+
 - npm や react-scripts のバージョンを更新する
 
 - GitHub pages に公開する仕方
