@@ -14,7 +14,7 @@
 - 次のコマンドを使用
 
 #+begin_src bash
-npx create-react-appプロジェクト名
+npx create-react-app プロジェクト名
 #+end_src
 
 - npm や react-scripts のバージョンを更新する
