@@ -1,11 +1,9 @@
 * ゲーム内容
 - 暗算ゲーム
   - ゲームの始めかた
-
-  #+begin_src bash
+  #+begin_src bash 
   npm start
   #+end_src
-
   レベルを選択して、Game Start をクリックすると遊べる
   [[https://raw.githubusercontent.com/taiseiyo/computational_game/master/public/sample_pic.png]]
 
