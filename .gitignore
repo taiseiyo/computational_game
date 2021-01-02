@@ -1,4 +1,4 @@
 # package-lock.json がディレクトリにあるので node_modules を消す
 node_modules/
 # README.org を優先する
-./README.md
+README.md
