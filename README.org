@@ -1,10 +1,13 @@
-* ゲーム内容
-- 暗算ゲーム
-  - ゲームの始めかた
+* Game content
+- Mental arithmetic game
+  - How to start the game
+
   #+begin_src bash 
+  # Play on a local server
   npm start
   #+end_src
-  レベルを選択して、Game Start をクリックすると遊べる
+
+  Select a level and click Game Start to play
   [[https://raw.githubusercontent.com/taiseiyo/computational_game/master/public/sample_pic.png]]
 
 * はじめ方
