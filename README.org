@@ -6,7 +6,7 @@
   #+end_src
 
   レベルを選択して、Game Start をクリックすると遊べる
-
+  [[https://raw.githubusercontent.com/taiseiyo/computational_game/master/public/sample_pic.png]]
 
 * はじめ方
 - 次のコマンドを使用
