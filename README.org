@@ -15,6 +15,7 @@
 
 #+begin_src bash
 npx create-react-app プロジェクト名
+npx create-react-app プロジェクト名 --template typescript
 #+end_src
 
 - npm や react-scripts のバージョンを更新する
@@ -34,6 +35,8 @@ npx create-react-app プロジェクト名
     }
     #+end_src
   - npm run deploy
+
+
 * firebase(realtime data)
 - 使いかた
   - module のインストール
@@ -48,3 +51,23 @@ npx create-react-app プロジェクト名
     選択して、設定から Firebase SDK snippet の CDN を選択して
     App.js に貼る
   
+* 注意事項
+
+  - emacs を使用している場合は、
+    node_modules/react-scripts/config/webpackDevServer.config.js を編
+    集しなければならない
+
+    before
+
+    #+begin_src 
+    watchOptions: {
+    ignored: ignoredFiles(paths.appSrc),
+    },		
+    #+end_src
+    
+    after
+    #+begin_src
+    watchOptions: {
+    ignored: [ignoredFiles(paths.appSrc),"**/.#*","**/*~","**/#*#"],
+    },
+    #+end_src
