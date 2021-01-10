@@ -68,6 +68,6 @@ npx create-react-app プロジェクト名 --template typescript
     after
     #+begin_src
     watchOptions: {
-    ignored: [ignoredFiles(paths.appSrc),"**/.#*","**/*~","**/#*#"],
+    ignored: [ignoredFiles(paths.appSrc), "**/.#*", "**/*~", "**/#*#"],
     },
     #+end_src
