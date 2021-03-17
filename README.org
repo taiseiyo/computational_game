@@ -42,9 +42,9 @@ npx create-react-app プロジェクト名 --template typescript
   - module のインストール
     #+begin_src bash
     sudo npm update -g firebase-tools
-    sudo npm install --save firebase
-    sudo npm install --save firebase-admin
-    sudo npm install --save firebase-functions
+    sudo npm install firebase
+    sudo npm install firebase-admin
+    sudo npm install firebase-functions
     #+end_src
 
   - プロジェクトの概要から 1 個のアプリを
